@@ -1,3 +1,4 @@
+# hoping this will kick off a change
 FROM ubuntu:14.04
 MAINTAINER Gary Lucas
 
@@ -29,4 +30,4 @@ WORKDIR /usr/local/kafka/kafka_2.9.2-0.8.2.0
 ADD run_kafka.sh   /usr/local/kafka/kafka_2.9.2-0.8.2.0/run_kafka.sh
 CMD ["/bin/bash", "/usr/local/kafka/kafka_2.9.2-0.8.2.0/run_kafka.sh"]
 
-
+EXPOSE 2181 9092
